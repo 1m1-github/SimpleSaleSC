@@ -1,0 +1,228 @@
+// SimpleSaleSC
+// owner == creator
+// owner creates SC (smart contract)
+// owner funds SC with 0.201 ALGO to opt-in and keep asset 
+// owner runs "init" command, funding SC with asset, setting price
+// buyer runs "buy" command, sending exact ALGO amount to receive asset tokens
+
+#pragma version 6
+
+////////////////
+// boilerplate to handle cases
+txn OnCompletion
+int NoOp
+==
+bnz handle_noop
+
+txn OnCompletion
+int OptIn
+==
+bnz handle_optin
+
+txn OnCompletion
+int CloseOut
+==
+bnz handle_closeout
+
+txn OnCompletion
+int UpdateApplication
+==
+bnz handle_updateapp
+
+txn OnCompletion
+int DeleteApplication
+==
+bnz handle_deleteapp
+
+// Unexpected OnCompletion value. Should be unreachable.
+b decline
+////////////////
+
+
+////////////////
+// 2 cases: init, buy
+handle_noop:
+
+txna ApplicationArgs 0
+byte "init"
+==
+bnz handle_init
+
+txna ApplicationArgs 0
+byte "buy"
+==
+bnz handle_buy
+
+// Unexpected first arg
+b decline
+////////////////
+
+////////////////
+// owner sets price
+// can only be run once
+handle_init:
+
+// only creator can init
+global CreatorAddress
+txn Sender
+==
+assert
+
+// need 2 txns (app call, asset send)
+global GroupSize
+int 2
+==
+assert
+
+// correct order of txns
+txn GroupIndex
+int 0
+==
+gtxn 1 TypeEnum
+int axfer
+==
+&&
+assert
+
+// init only once
+byte "INIT"
+app_global_get
+bnz decline
+byte "INIT"
+int 1
+app_global_put
+
+// store price
+byte "PRICE"
+txna ApplicationArgs 1
+btoi
+app_global_put
+
+// opt-in to ASA
+int 0
+global CurrentApplicationAddress
+callsub send_asa
+
+b approve
+////////////////
+
+////////////////
+// buyer sends exact ALGO to get ALGO/PRICE asset tokens
+handle_buy:
+
+// need 2 txns (app call, asset send, algo send)
+global GroupSize
+int 2
+==
+assert
+
+// correct order of txns
+gtxn 0 TypeEnum
+int pay
+==
+txn GroupIndex
+int 1
+==
+&&
+assert
+
+// check that ALGO amount (minus fees) is multiple of PRICE
+callsub stack_amount_price
+%
+bnz decline
+
+// send ASA to buyer
+callsub stack_amount_price
+/
+txn Sender
+callsub send_asa
+
+// send ALGO to owner
+callsub stack_amount_price
+pop
+global CreatorAddress
+callsub send_algo
+
+b approve
+////////////////
+
+///////////////
+stack_amount_price:
+gtxn 0 Amount
+global MinTxnFee
+int 2
+*
+-
+byte "PRICE"
+app_global_get
+retsub
+///////////////
+
+///////////////
+// stack: amount, receiver
+send_algo:
+itxn_begin
+itxn_field Receiver
+itxn_field Amount
+int pay
+itxn_field TypeEnum
+itxn_submit
+retsub
+///////////////
+
+///////////////
+// stack: amount, receiver
+send_asa:
+itxn_begin
+itxn_field AssetReceiver
+itxn_field AssetAmount
+int axfer
+itxn_field TypeEnum
+txna Assets 0
+itxn_field XferAsset
+itxn_submit
+retsub
+///////////////
+
+
+///////////////
+// update, delete
+// debug: only by owner
+// prod: not allowed
+handle_updateapp:
+handle_deleteapp:
+b decline
+// global GroupSize
+// int 1
+// ==
+// assert
+
+// global CreatorAddress
+// txn Sender
+// ==
+// assert
+
+// b approve
+///////////////
+
+///////////////
+// handle closeOut
+handle_closeout:
+b decline
+///////////////
+
+///////////////
+handle_optin:
+b approve
+///////////////
+
+////////////////
+// end branches
+decline:
+int 0
+return
+
+approve:
+int 1
+return
+////////////////

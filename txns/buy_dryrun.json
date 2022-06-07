@@ -1,0 +1,437 @@
+{
+  "accounts": [
+    {
+      "address": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+      "amount": 64726583,
+      "amount-without-pending-rewards": 64726583,
+      "apps-local-state": [
+        {
+          "id": 67119462,
+          "schema": {
+            "num-byte-slice": 0,
+            "num-uint": 0
+          }
+        },
+        {
+          "id": 91696876,
+          "schema": {
+            "num-byte-slice": 0,
+            "num-uint": 0
+          }
+        },
+        {
+          "id": 92065044,
+          "schema": {
+            "num-byte-slice": 0,
+            "num-uint": 0
+          }
+        },
+        {
+          "id": 92456521,
+          "schema": {
+            "num-byte-slice": 0,
+            "num-uint": 2
+          }
+        },
+        {
+          "id": 94286466,
+          "schema": {
+            "num-byte-slice": 0,
+            "num-uint": 0
+          }
+        },
+        {
+          "id": 94294295,
+          "schema": {
+            "num-byte-slice": 0,
+            "num-uint": 0
+          }
+        }
+      ],
+      "apps-total-schema": {
+        "num-byte-slice": 3,
+        "num-uint": 21
+      },
+      "assets": [
+        {
+          "amount": 18446744073709551615,
+          "asset-id": 78585497,
+          "is-frozen": false
+        },
+        {
+          "amount": 18446744073709551615,
+          "asset-id": 78585796,
+          "is-frozen": false
+        },
+        {
+          "amount": 999999975,
+          "asset-id": 91697272,
+          "is-frozen": false
+        },
+        {
+          "amount": 999999970,
+          "asset-id": 92125658,
+          "is-frozen": false
+        },
+        {
+          "amount": 0,
+          "asset-id": 94294366,
+          "is-frozen": false
+        }
+      ],
+      "created-apps": [
+        {
+          "id": 67119462,
+          "params": {
+            "approval-program": "BSADAAECMRkiEkAAITEZIxJAAJgxGSQSQACRMRmBBBJAAHkxGYEFEkAAgUIApzYaAIAETE9DSxJAABI2GgCABlVOTE9DSxJAACZCAIgxFiMSRCI4BzIKEkQiOBEiEkQiOBAjEkQyBCQSREIAAEIAZzEAMgkSREIAADYaARc2GgIXNhoDFzYcAogAJDIACDIJiAAcNhwBiAAWQgA7MgQjEjIJMQASEEAALkIAKUIAJksBQQAeSwGBoI0GDEEACklgIhJBAANCAAqxI7IQsgeyCLOJSEiJIkMjQw==",
+            "clear-state-program": "BYEB",
+            "creator": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY"
+          }
+        },
+        {
+          "id": 92065044,
+          "params": {
+            "approval-program": "BiAEAQAEAiYBAW4xGSMSQAAgMRkiEkAB4zEZJRJAAdkxGSQSQAHEMRmBBRJAAbxCAc02GgCABnVwZGF0ZRJAASg2GgCABHN3YXASQABDNhoAgAh3aXRoZHJhdxJAALc2GgCABW9wdGluEkABX0IBjzIKTElBAANCAANIYIlwAEiJNAxBAANCAAQzAAiJMwASiTIEJRJEMRYiEkQzABE1DDYwADURI4gAqmQ1EjQSNAwSNBI0ERIbRDQMiP+zNQA0EYj/rDUBNAxkNQI0EWQ1A4j/rjUEIjQANAQINAAKNAI0AwqUCTQBCzUFNBFBAANCABCxIrIQMQCyBzQFsgizQgD/sSSyEDEAshQ0BbISNBGyEbNCAOtCAOYjKGVIiSM1Coj/9TUPNA9BACcoaTQKiAAhNRA0EGQ1DDQQaTQMaTQKIgg0DwxBAAk0CiIINQpC/9uJKEwWVwcBUIlJQQAIMgpMcAAiEkRIiTIJMQASRDIEIhJEMTGBCgxEiP+hKDExZyM1DiM1CjQKwDA1DDQMiP/JNAoiCMAaFzUNNA00Dgg1DjQMFjQNZzQKiP+mNAwWZzQKIgg1CjQKMTEMQQADQv/FNA6BkE4SREIANTIJMQASRDIEIhJEsSSyEDIKshQjshI2MACyEbNCABYyBCISRDIJMQASREIACEIAA0IAAiNDIkM=",
+            "clear-state-program": "BoEB",
+            "creator": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+            "global-state": [
+              {
+                "key": "AAAAAAV9udo=",
+                "value": {
+                  "bytes": "",
+                  "type": 2,
+                  "uint": 400
+                }
+              },
+              {
+                "key": "bgA=",
+                "value": {
+                  "bytes": "AAAAAAV3MHg=",
+                  "type": 1,
+                  "uint": 0
+                }
+              },
+              {
+                "key": "bgE=",
+                "value": {
+                  "bytes": "AAAAAAAAAAA=",
+                  "type": 1,
+                  "uint": 0
+                }
+              },
+              {
+                "key": "AAAAAAAAAAA=",
+                "value": {
+                  "bytes": "",
+                  "type": 2,
+                  "uint": 600
+                }
+              },
+              {
+                "key": "bgI=",
+                "value": {
+                  "bytes": "AAAAAAV9udo=",
+                  "type": 1,
+                  "uint": 0
+                }
+              },
+              {
+                "key": "AAAAAAV3MHg=",
+                "value": {
+                  "bytes": "",
+                  "type": 2,
+                  "uint": 9000
+                }
+              },
+              {
+                "key": "bg==",
+                "value": {
+                  "bytes": "",
+                  "type": 2,
+                  "uint": 3
+                }
+              }
+            ],
+            "global-state-schema": {
+              "num-byte-slice": 3,
+              "num-uint": 4
+            }
+          }
+        },
+        {
+          "id": 92456521,
+          "params": {
+            "approval-program": "BiAEAQAEAiYBAW4xGSMSQAAgMRkiEkAB7zEZJRJAAeUxGSQSQAHQMRmBBRJAAchCAdk2GgCABnVwZGF0ZRJAATQ2GgCABHN3YXASQABKNhoAgAh3aXRoZHJhdxJAAMM2GgCABW9wdGluEkABa0IBmzIKTEkjFhJAAANCAANIYIkXcABIiTQMIxYSQAADQgAEMwAIiTMAEokyBCUSRDEWIhJEMwARFjUMNjAAFjURI4gArWQ1EjQSNAwSNBI0ERIbRDQMiP+qNQA0EYj/ozUBNAxkNQI0EWQ1A4j/qTUEIjQANAQINAAKNAI0AwqUCTQBCzUFNBEjFhJAAANCABCxIrIQMQCyBzQFsgizQgD/sSSyEDEAshQ0BbISNBGyEbNCAOtCAOYjKGVIiSM1Coj/9TUPNA9BACcoaTQKiAAhNRA0EGQ1DDQQaTQMaTQKIgg0DwxBAAk0CiIINQpC/9uJKEwWVwcBUIlJQQAIMgpMcAAiEkRIiTIJMQASRDIEIhJEMTGBCgxEiP+hKDExZyM1DiM1CjQKwDA1DDQMiP/JNAoiCMAaFzUNNA00Dgg1DjQMFjQNZzQKiP+mNAwWZzQKIgg1CjQKMTEMQQADQv/FNA6BkE4SREIANTIJMQASRDIEIhJEsSSyEDIKshQjshI2MACyEbNCABYyBCISRDIJMQASREIACEIAA0IAAiNDIkM=",
+            "clear-state-program": "BoEB",
+            "creator": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+            "global-state-schema": {
+              "num-byte-slice": 0,
+              "num-uint": 10
+            },
+            "local-state-schema": {
+              "num-byte-slice": 0,
+              "num-uint": 2
+            }
+          }
+        },
+        {
+          "id": 94286466,
+          "params": {
+            "approval-program": "BiAEAAEEAiYBBElOSVQxGSISQAAgMRkjEkAArzEZJRJAAKUxGSQSQACQMRmBBRJAAIhCAJk2GgCABGluaXQSQAAPNhoAgANidXkSQAAzQgB9MgkxABJEMgQlEkQzARAkEjEWIhIQRChkQABiKCNngAVQUklDRTYaARdniAAqQgBPQgBKsSOyEDEAsgc0BbIIs0IAPLEkshAyCrIUIrISNjAAshGzQgAosSSyEDIKshQishIzARGyEbOJMgQjEkQyCTEAEkRCAAhCAANCAAIiQyND",
+            "clear-state-program": "BoEB",
+            "creator": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+            "global-state": [
+              {
+                "key": "SU5JVA==",
+                "value": {
+                  "bytes": "",
+                  "type": 2,
+                  "uint": 1
+                }
+              },
+              {
+                "key": "UFJJQ0U=",
+                "value": {
+                  "bytes": "",
+                  "type": 2,
+                  "uint": 23
+                }
+              }
+            ],
+            "global-state-schema": {
+              "num-byte-slice": 0,
+              "num-uint": 2
+            }
+          }
+        },
+        {
+          "id": 94294295,
+          "params": {
+            "approval-program": "BiAEAQACBCYDBElOSVQFUFJJQ0UDQVNBMRkjEkAAIDEZIhJAANYxGSQSQADMMRklEkAAtzEZgQUSQACvQgDANhoAgARpbml0EkAADzYaAIADYnV5EkAAMkIApDIJMQASRDIEJBJEMRYjEjMBECUSEEQoZEAAiSgiZyk2GgEXZyo2MABniABSQgB3MgQkEkQzABAiEjEWIhIQRIgAFxhAAF6IABAKMQCIACGIAAdIiAAOQgBNMwAIMgAkCwkpZImxsggishAxALIHs4mxshSyEiWyECpkshGzibElshAyCrIUI7ISNjAAshGziTIEIhJEMgkxABJEQgAIQgADQgACI0MiQw==",
+            "clear-state-program": "BoEB",
+            "creator": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+            "global-state": [
+              {
+                "key": "QVNB",
+                "value": {
+                  "bytes": "",
+                  "type": 2,
+                  "uint": 94294366
+                }
+              },
+              {
+                "key": "SU5JVA==",
+                "value": {
+                  "bytes": "",
+                  "type": 2,
+                  "uint": 1
+                }
+              },
+              {
+                "key": "UFJJQ0U=",
+                "value": {
+                  "bytes": "",
+                  "type": 2,
+                  "uint": 23
+                }
+              }
+            ],
+            "global-state-schema": {
+              "num-byte-slice": 0,
+              "num-uint": 3
+            }
+          }
+        }
+      ],
+      "created-assets": [
+        {
+          "index": 78585497,
+          "params": {
+            "creator": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+            "decimals": 0,
+            "manager": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+            "name": "2i2i",
+            "name-b64": "MmkyaQ==",
+            "total": 18446744073709551615,
+            "unit-name": "2i2i",
+            "unit-name-b64": "MmkyaQ==",
+            "url": "https://about.2i2i.app",
+            "url-b64": "aHR0cHM6Ly9hYm91dC4yaTJpLmFwcA=="
+          }
+        },
+        {
+          "index": 78585796,
+          "params": {
+            "creator": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+            "decimals": 0,
+            "manager": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+            "name": "2i2i",
+            "name-b64": "MmkyaQ==",
+            "reserve": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+            "total": 18446744073709551615,
+            "unit-name": "2i2i",
+            "unit-name-b64": "MmkyaQ==",
+            "url": "https://about.2i2i.app",
+            "url-b64": "aHR0cHM6Ly9hYm91dC4yaTJpLmFwcA=="
+          }
+        },
+        {
+          "index": 91697272,
+          "params": {
+            "clawback": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+            "creator": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+            "decimals": 0,
+            "freeze": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+            "manager": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+            "reserve": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+            "total": 1000000000,
+            "unit-name": "NOVALUE",
+            "unit-name-b64": "Tk9WQUxVRQ=="
+          }
+        },
+        {
+          "index": 92125658,
+          "params": {
+            "clawback": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+            "creator": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+            "decimals": 0,
+            "freeze": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+            "manager": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+            "reserve": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+            "total": 1000000000,
+            "unit-name": "NOVALUE",
+            "unit-name-b64": "Tk9WQUxVRQ=="
+          }
+        },
+        {
+          "index": 94294366,
+          "params": {
+            "clawback": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+            "creator": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+            "decimals": 0,
+            "freeze": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+            "manager": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+            "reserve": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+            "total": 5,
+            "unit-name": "NOVALUE",
+            "unit-name-b64": "Tk9WQUxVRQ=="
+          }
+        }
+      ],
+      "min-balance": 2448500,
+      "pending-rewards": 0,
+      "reward-base": 27521,
+      "rewards": 0,
+      "round": 22077212,
+      "status": "Offline",
+      "total-apps-opted-in": 6,
+      "total-assets-opted-in": 5,
+      "total-created-apps": 5,
+      "total-created-assets": 5
+    },
+    {
+      "address": "ZLOSYLCHPAS5MEHMG7O7E3XUPZX2KVQQSV5T47IW5MEI3YGJDCLMMT4ZAM",
+      "amount": 200000,
+      "amount-without-pending-rewards": 200000,
+      "assets": [
+        {
+          "amount": 5,
+          "asset-id": 94294366,
+          "is-frozen": false
+        }
+      ],
+      "min-balance": 200000,
+      "pending-rewards": 0,
+      "reward-base": 27521,
+      "rewards": 0,
+      "round": 22077212,
+      "status": "Offline",
+      "total-apps-opted-in": 0,
+      "total-assets-opted-in": 1,
+      "total-created-apps": 0,
+      "total-created-assets": 0
+    }
+  ],
+  "apps": [
+    {
+      "id": 94294295,
+      "params": {
+        "approval-program": "BiAEAQACBCYDBElOSVQFUFJJQ0UDQVNBMRkjEkAAIDEZIhJAANYxGSQSQADMMRklEkAAtzEZgQUSQACvQgDANhoAgARpbml0EkAADzYaAIADYnV5EkAAMkIApDIJMQASRDIEJBJEMRYjEjMBECUSEEQoZEAAiSgiZyk2GgEXZyo2MABniABSQgB3MgQkEkQzABAiEjEWIhIQRIgAFxhAAF6IABAKMQCIACGIAAdIiAAOQgBNMwAIMgAkCwkpZImxsggishAxALIHs4mxshSyEiWyECpkshGzibElshAyCrIUI7ISNjAAshGziTIEIhJEMgkxABJEQgAIQgADQgACI0MiQw==",
+        "clear-state-program": "BoEB",
+        "creator": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+        "global-state": [
+          {
+            "key": "QVNB",
+            "value": {
+              "bytes": "",
+              "type": 2,
+              "uint": 94294366
+            }
+          },
+          {
+            "key": "SU5JVA==",
+            "value": {
+              "bytes": "",
+              "type": 2,
+              "uint": 1
+            }
+          },
+          {
+            "key": "UFJJQ0U=",
+            "value": {
+              "bytes": "",
+              "type": 2,
+              "uint": 23
+            }
+          }
+        ],
+        "global-state-schema": {
+          "num-byte-slice": 0,
+          "num-uint": 3
+        }
+      }
+    }
+  ],
+  "latest-timestamp": 1654629500,
+  "protocol-version": "https://github.com/algorandfoundation/specs/tree/d5ac876d7ede07367dbaa26e149aa42589aac1f7",
+  "round": 22077212,
+  "sources": null,
+  "txns": [
+    {
+  "sig": "To01B4vobtYgjkrQMV4EBIRwdhL/k/lIZ57Kuaw8fhRzj33i6wYirO1R/QPWs/lJxcH2KLxvBDBxREcygTOVDA==",
+  "txn": {
+    "amt": 2046,
+    "fee": 1000,
+    "fv": 22077213,
+    "gen": "testnet-v1.0",
+    "gh": "SGO1GKSzyE7IEPItTxCByw9x8FmnrCDexi9/cOUJOiI=",
+    "grp": "m7SihKsFXHw5ko1Jcv/k2XnwsNYR5FzqLbK5mMmZ5pQ=",
+    "lv": 22078213,
+    "note": "KM5zdIF5y/8=",
+    "rcv": "ZLOSYLCHPAS5MEHMG7O7E3XUPZX2KVQQSV5T47IW5MEI3YGJDCLMMT4ZAM",
+    "snd": "NVVMVMEFGTLIVW3YL6R7ADZAWU66HUBNHI6OH264U5YKVZVPG67EMB5EWM",
+    "type": "pay"
+  }
+},
+    {
+  "sig": "BVo6oQWlC5K16k/lao3Wt4oAXfMERu9zh+2xR9Uu+b6giTTOo6YSF+s0IpJePBwe/metzfcJpZxbxBaVEhsvAw==",
+  "txn": {
+    "apaa": [
+      "YnV5"
+    ],
+    "apas": [
+      94294366
+    ],
+    "apid": 94294295,
+    "fee": 1000,
+    "fv": 22077213,
+    "gh": "SGO1GKSzyE7IEPItTxCByw9x8FmnrCDexi9/cOUJOiI=",
+    "grp": "m7SihKsFXHw5ko1Jcv/k2XnwsNYR5FzqLbK5mMmZ5pQ=",
+    "lv": 22078213,
+    "note": "pud6neFwPis=",
+    "snd": "2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY",
+    "type": "appl"
+  }
+}
+  ]
+}
