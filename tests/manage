@@ -9,10 +9,6 @@ export TXNS_DIR=./txns
 export SYSTEM_APPROVAL_FILE=$CODE_DIR/state_approval_program.teal
 export SYSTEM_CLEAR_FILE=$CODE_DIR/state_clear_program.teal
 export OWNER=2I2IXTP67KSNJ5FQXHUJP5WZBX2JTFYEBVTBYFF3UUJ3SQKXSZ3QHZNNPY
-export PRICE=23
-export AMOUNT=50
-export BUYER=NVVMVMEFGTLIVW3YL6R7ADZAWU66HUBNHI6OH264U5YKVZVPG67EMB5EWM
-export BUYER_AMOUNT_TOKENS=3
 
 // create SC
 goal app create --creator $OWNER --approval-prog $SYSTEM_APPROVAL_FILE --clear-prog $SYSTEM_CLEAR_FILE --global-byteslices 0 --global-ints 2 --local-byteslices 0 --local-ints 0 --on-completion OptIn -w $WALLET
@@ -28,6 +24,8 @@ export ASA=94296871
 goal clerk send --from=$OWNER --to=$SYSTEM_ACCOUNT --amount=201000 -w $WALLET
 
 // init - running twice should fail
+export PRICE=23
+export AMOUNT=50
 goal app call --from=$OWNER --app-id=$SYSTEM_ID --foreign-asset $ASA --app-arg="str:init" --app-arg="int:$PRICE" --out=$TXNS_DIR/init_call.stxn -w $WALLET
 goal asset send --assetid=$ASA --from=$OWNER --to=$SYSTEM_ACCOUNT --amount=$AMOUNT --out=$TXNS_DIR/init_asa_send.stxn -w $WALLET
 cat $TXNS_DIR/init_call.stxn $TXNS_DIR/init_asa_send.stxn > $TXNS_DIR/combinedtransactions.txn
@@ -36,6 +34,7 @@ goal clerk sign --infile $TXNS_DIR/groupedtransactions.txn --outfile $TXNS_DIR/i
 goal clerk rawsend --filename $TXNS_DIR/init.stxn
 
 // buyer opt-in
+export BUYER=NVVMVMEFGTLIVW3YL6R7ADZAWU66HUBNHI6OH264U5YKVZVPG67EMB5EWM
 goal asset send --amount 0 --assetid $ASA --from $BUYER --to $BUYER -w $WALLET --out=$TXNS_DIR/buyer_asa_optin.stxn
 goal app optin --app-id $SYSTEM_ID --from $BUYER -w $WALLET --out=$TXNS_DIR/buyer_sc_optin.stxn
 cat $TXNS_DIR/buyer_asa_optin.stxn $TXNS_DIR/buyer_sc_optin.stxn > $TXNS_DIR/combinedtransactions.txn
@@ -44,6 +43,7 @@ goal clerk sign --infile $TXNS_DIR/groupedtransactions.txn --outfile $TXNS_DIR/b
 goal clerk rawsend --filename $TXNS_DIR/buyer_optin.stxn
 
 // buy
+export BUYER_AMOUNT_TOKENS=3
 goal clerk send --from=$BUYER --to=$SYSTEM_ACCOUNT --amount=$(($BUYER_AMOUNT_TOKENS*$PRICE+2000)) --out=$TXNS_DIR/buy_send.stxn -w $WALLET
 goal app call --from=$BUYER --app-id=$SYSTEM_ID --app-account $OWNER --foreign-asset $ASA --app-arg="str:buy" --out=$TXNS_DIR/buy_call.stxn -w $WALLET
 cat $TXNS_DIR/buy_send.stxn $TXNS_DIR/buy_call.stxn > $TXNS_DIR/combinedtransactions.txn
